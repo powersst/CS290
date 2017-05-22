@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Steven Powers - CS290 - Slideshow</title>
+  <link href="css/default.css" rel="stylesheet" type="text/css">
+  <script src="js/slideshow.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+  <div id="wrapper">    
+    
+    <header>
+  	<h1>Steven Powers - CS290</h1>
+    <p>Hello World, this is Steven Powers' page.</p>
+    </header>
+    
+    <nav id="primary">
+        <ul>
+            <li><a href="../../index.html">home</a></li>
+            <li><a href="../../about.html">about</a></li>
+            <li><a href="../../assignments.html">assignments</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div id="page">
+     <article id="pictureGallery">
+	 <h2>Picture Gallery</h2>
+
+	 <p>These are pictures from my recent trip to the Bend, Oregon area. Some images are from Paulina Peak, and others are from Smith Rock State Park</p>
+          <div class="gallery">
+
+          <div class="preview">
+            <img id="preview" src="images/image1.JPG"  alt="No Image Loaded"/>
+          </div><br/>
+          
+          <div class="thumbnails">
+            <img onmousedown="return changeImage(this.id)" id="img1" src="images/image1.jpg" alt="Image Not Loaded"/>
+            <img onmousedown="return changeImage(this.id)" id="img2" src="images/image2.jpg" alt="Image Not Loaded"/>
+            <img onmousedown="return changeImage(this.id)" id="img3" src="images/image3.jpg" alt="Image Not Loaded"/>
+            <img onmousedown="return changeImage(this.id)" id="img4" src="images/image4.jpg" alt="Image Not Loaded"/>
+            <img onmousedown="return changeImage(this.id)" id="img5" src="images/image5.jpg" alt="Image Not Loaded"/>
+            <img onmousedown="return changeImage(this.id)" id="img6" src="images/image6.jpg" alt="Image Not Loaded"/>
+           </div><br/>
+          
+       	   </div>
+     </article>
+    </div>
+    
+    <footer>
+      <p>&copy; Copyright 2015 Steven Powers - All rights reserved.</p>
+	</footer>
+  </div>
+ 
+</body>
+</html>

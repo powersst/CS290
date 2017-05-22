@@ -1,0 +1,17 @@
+
+
+body, h1, h2, h3, h4, h5, h6, p, div, ul, ol, li, table, tr, th, td, form { 
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 1em;
+	}
+
+img {
+	border: 0;
+	}
+
+ul, li {
+	list-style-type: none;
+	}

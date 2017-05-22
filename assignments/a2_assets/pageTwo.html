@@ -1,0 +1,161 @@
+<!doctype html>
+<!--Steven Powers - CS290 - 10/12/2015-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Art Store - PageTwo</title>
+
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="wrapper">    
+<header>
+<nav id="primary">
+	<ul>
+    	<li><a href="pageTwo.html">My Account</a></li>
+    	<li><a href="#">Wish List</a></li>
+    	<li><a href="#">Shopping Cart</a></li>
+    	<li><a href="#">Checkout</a></li>
+	</ul>        
+</nav>
+</header>
+
+<h1>Art Store</h1>
+
+<nav id="secondary">
+	<ul>
+    	<li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Art Works</a></li>
+        <li><a href="#">Artists</a></li>
+	</ul>        
+</nav>
+<div id="page">
+<article id="pageTwo">
+<h2 id="customerRegistration">Customer Registration</h2>
+    <form id="userForm" action="http://web.engr.oregonstate.edu/~schutfoj/cs290/process.php"  method="post" >
+    
+    <section id="userInfo">
+        <h3 class="registrationHeader">1. User Info</h3>
+        <fieldset>
+        <div class="left_elements" style="float: left">
+        <label>First Name</label><br>
+        <input type="text" title="First Name" id="firstName" name="first"/>
+        </div>
+        <label>Last Name</label><br>
+        <input type="text" title="Last Name" id="lastName" name="last" />
+        
+        <div style="clear:both">
+        <label>Email</label><br>
+        <input type="text" title="Email Address" id="email" name="email" pattern=".+@.+" placeholder="format for email is xxx@yyy.zzz"  />
+        </div> 
+        <div class="left_elements" style="float: left">
+        <label>Password</label><br>
+        <input type="password" title="Password" id="password" name="pass1" placeholder="at least 8 characters"/>
+        </div>
+        <label>Password Repeat</label><br>
+        <input type="password" title="Password Repeat" id="passwordRepeat" name="pass2" placeholder="at least 8 characters"/>
+     	</fieldset>
+    </section>
+
+
+    <section id="location">
+        <h3 class="registrationHeader">2. Location</h3>
+        <fieldset>
+        <div style="clear:both">
+        <label>Address</label><br>
+        <input type="text" title="Address" id="address" name="address"/>
+        </div>
+        
+        
+        <div class="left_elements" style="float:left;">
+        <label>City</label><br>
+        <input type="text" title="City" id="city" name="city"/>
+        </div>
+        
+        <div style="display:block">
+        <label>State</label><br>
+        <input type="text" title="State" id="state" name="state"/>
+            </div>
+        
+        <label>Zip Code</label><br>
+        <input type="number" title="Zip Code" id="zipcode" name="zip" min="0"/>
+       
+        
+        <div style="clear:both">
+        </div>
+        
+        
+        <label>Phone</label><br>
+        <input type="tel" title="Phone Number" id="phone" name="phone" placeholder="NNN-NNN-NNNN" />
+
+        <label>Country</label><br>
+        <select id="country" name="country" title="Select Country">
+        	<option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+            
+            <option value="England">England</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            
+            <option value="Brazil">Brazil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Venezuela">Venezuela</option>
+        </select>
+        
+        <div id="continent" style="clear:both">
+        <label>Continent</label><br>
+        <input type="radio" title="North America" id="northAmericaRadio"/>North America<br>
+        <input type="radio" title="Europe" id="europeRadio"/>Europe<br>
+        <input type="radio" title="South America" id="southAmericaRadio"/>South America<br>
+        </div>
+        </fieldset>
+    </section>
+    
+    <section id="personalDetails">
+        <h3 class="registrationHeader">3. Personal Details</h3>
+        <fieldset>
+        
+        <div style="float: left">
+        <label>Birth Day</label><br>
+        <input type="date" title="Birth Day Picker" id="birthday" name="birthday"/>
+        </div>
+        <br>
+       
+        <label>Favorite Color</label><br>
+        <input type="color" title="Favorite Color" id="favorite" name="favorite" />
+        <br>
+        <br>
+        <label>Interest in Art</label><br>
+        <p>Minimal <input type="range" title="Interest in Art" id="interest" name="interest" min="0" max="100" step="10" value="50" /> Love it!</p>
+        </fieldset>
+    </section>
+    
+        <section id="allDone">
+        <h3 id="registrationHeader">4. All Done</h3>
+        <fieldset>
+        
+        <p><input type="checkbox" title="Agree to Terms?" id="agreeToTerms" name="agree"/> I agree to the <a href="#">Terms of the Site</a></p>
+        
+        <input type="submit" title="Sign me up!" value="Sign me up!" onClick=""/>
+        </fieldset>
+        
+        
+        
+    </section>
+    
+    </form>
+
+</article>
+</div>
+
+<footer><p>All images are copyright to their owners. This is just a hypothetical site &copy; 2014 Copyright Art Store</p></footer>
+
+
+</div>
+</body>
+</html>
+
